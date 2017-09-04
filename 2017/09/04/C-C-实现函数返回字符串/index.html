@@ -98,16 +98,16 @@
 
 
 
-<meta name="description" content="问题如何实现一个返回值为char*的函数1char* fun(...); 解决方法方法1：返回字符串常量返回一个指向字符串常量的指针，但是这个方法非常局限，因为字符串常量存储在全局静态区，是只读内存区，无法对它进行计算和修改123456789char* fun() &amp;#123;	return &quot;hello world&quot;;&amp;#125;// 或者如下方式char* fun() &amp;#123;    //">
+<meta name="description" content="本文总结5种方法来实现C/C++中函数返回值为字符串的场景，并对每种方法做以分析，最后参照C标准库fgets()函数的实现方式，给出最佳方案">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C&#x2F;C++实现函数返回字符串">
 <meta property="og:url" content="http://coderlight.cn/2017/09/04/C-C-实现函数返回字符串/index.html">
 <meta property="og:site_name" content="Light&#39;s Home">
-<meta property="og:description" content="问题如何实现一个返回值为char*的函数1char* fun(...); 解决方法方法1：返回字符串常量返回一个指向字符串常量的指针，但是这个方法非常局限，因为字符串常量存储在全局静态区，是只读内存区，无法对它进行计算和修改123456789char* fun() &amp;#123;	return &quot;hello world&quot;;&amp;#125;// 或者如下方式char* fun() &amp;#123;    //">
-<meta property="og:updated_time" content="2017-09-04T14:52:08.000Z">
+<meta property="og:description" content="本文总结5种方法来实现C/C++中函数返回值为字符串的场景，并对每种方法做以分析，最后参照C标准库fgets()函数的实现方式，给出最佳方案">
+<meta property="og:updated_time" content="2017-09-04T15:05:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C&#x2F;C++实现函数返回字符串">
-<meta name="twitter:description" content="问题如何实现一个返回值为char*的函数1char* fun(...); 解决方法方法1：返回字符串常量返回一个指向字符串常量的指针，但是这个方法非常局限，因为字符串常量存储在全局静态区，是只读内存区，无法对它进行计算和修改123456789char* fun() &amp;#123;	return &quot;hello world&quot;;&amp;#125;// 或者如下方式char* fun() &amp;#123;    //">
+<meta name="twitter:description" content="本文总结5种方法来实现C/C++中函数返回值为字符串的场景，并对每种方法做以分析，最后参照C标准库fgets()函数的实现方式，给出最佳方案">
 
 
 
@@ -506,6 +506,10 @@ $(function() {
 
           
 
+          
+              <div class="post-description">
+                  本文总结5种方法来实现C/C++中函数返回值为字符串的场景，并对每种方法做以分析，最后参照C标准库fgets()函数的实现方式，给出最佳方案
+              </div>
           
 
         </div>
