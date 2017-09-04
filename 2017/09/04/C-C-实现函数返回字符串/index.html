@@ -98,15 +98,16 @@
 
 
 
-<meta name="description" content="还没想好说什么呢...">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Light&#39;s Home">
-<meta property="og:url" content="http://coderlight.cn/categories/test/index.html">
+<meta name="description" content="问题如何实现一个返回值为char*的函数 解决方法方法1：返回字符串常量返回一个指向字符串常量的指针，但是这个方法非常局限，因为字符串常量存储在全局静态区，是只读内存区，无法对它进行计算和修改123456789char* fun() &amp;#123;	return &quot;hello world&quot;;&amp;#125;// 或者如下方式char* fun() &amp;#123;    //  不加const_cast会有">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C&#x2F;C++实现函数返回字符串">
+<meta property="og:url" content="http://coderlight.cn/2017/09/04/C-C-实现函数返回字符串/index.html">
 <meta property="og:site_name" content="Light&#39;s Home">
-<meta property="og:description" content="还没想好说什么呢...">
+<meta property="og:description" content="问题如何实现一个返回值为char*的函数 解决方法方法1：返回字符串常量返回一个指向字符串常量的指针，但是这个方法非常局限，因为字符串常量存储在全局静态区，是只读内存区，无法对它进行计算和修改123456789char* fun() &amp;#123;	return &quot;hello world&quot;;&amp;#125;// 或者如下方式char* fun() &amp;#123;    //  不加const_cast会有">
+<meta property="og:updated_time" content="2017-09-04T13:00:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Light&#39;s Home">
-<meta name="twitter:description" content="还没想好说什么呢...">
+<meta name="twitter:title" content="C&#x2F;C++实现函数返回字符串">
+<meta name="twitter:description" content="问题如何实现一个返回值为char*的函数 解决方法方法1：返回字符串常量返回一个指向字符串常量的指针，但是这个方法非常局限，因为字符串常量存储在全局静态区，是只读内存区，无法对它进行计算和修改123456789char* fun() &amp;#123;	return &quot;hello world&quot;;&amp;#125;// 或者如下方式char* fun() &amp;#123;    //  不加const_cast会有">
 
 
 
@@ -135,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://coderlight.cn/categories/test/"/>
+  <link rel="canonical" href="http://coderlight.cn/2017/09/04/C-C-实现函数返回字符串/"/>
 
 
 
 
 
-  <title>分类: test | Light's Home</title>
+  <title>C/C++实现函数返回字符串 | Light's Home</title>
   
 
 
@@ -258,7 +259,7 @@ $(function() {
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left  ">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -406,55 +407,214 @@ $(function() {
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>test<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://coderlight.cn/2017/09/04/C-C-实现函数返回字符串/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Light">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/10738249.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Light's Home">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/09/01/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">C/C++实现函数返回字符串</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-01T11:21:00+08:00"
-              content="2017-09-01" >
-          09-01
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-04T19:23:21+08:00">
+                2017-09-04
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C-C/" itemprop="url" rel="index">
+                    <span itemprop="name">C/C++</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/09/04/C-C-实现函数返回字符串/" class="leancloud_visitors" data-flag-title="C/C++实现函数返回字符串">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    </div>
+      
 
+      
+        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>如何实现一个返回值为char*的函数</p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="方法1：返回字符串常量"><a href="#方法1：返回字符串常量" class="headerlink" title="方法1：返回字符串常量"></a>方法1：返回字符串常量</h3><p>返回一个指向字符串常量的指针，但是这个方法非常局限，因为字符串常量存储在全局静态区，是只读内存区，无法对它进行计算和修改<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">char</span>* <span class="title">fun</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">return</span> <span class="string">"hello world"</span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">// 或者如下方式</span></div><div class="line"><span class="function"><span class="keyword">char</span>* <span class="title">fun</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="comment">//  不加const_cast会有warning:warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</span></div><div class="line">    <span class="keyword">char</span> *str = <span class="keyword">const_cast</span>&lt;<span class="keyword">char</span> *&gt;(<span class="string">"hello world"</span>);</div><div class="line">    <span class="keyword">return</span> str;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="方法2：使用全局申明的数组变量"><a href="#方法2：使用全局申明的数组变量" class="headerlink" title="方法2：使用全局申明的数组变量"></a>方法2：使用全局申明的数组变量</h3><p>使用一个全局数组变量来存储，简单易用，缺点是任何人可以在任何时候都可以修改这个数组，而且函数的下一次调用会覆盖掉当前值，此外，全局数组的大小需要 \geq 函数返回值所需要的内存大小<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">char</span> g_str[<span class="number">100</span>];</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">char</span>* <span class="title">fun</span><span class="params">()</span> </span>&#123;</div><div class="line">    ...</div><div class="line">    g_str[i] = ...</div><div class="line">    ...</div><div class="line">    <span class="keyword">return</span> g_str;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="方法3：使用静态数组"><a href="#方法3：使用静态数组" class="headerlink" title="方法3：使用静态数组"></a>方法3：使用静态数组</h3><h3 id="方法4：函数内部显示分配堆内存来保存返回值"><a href="#方法4：函数内部显示分配堆内存来保存返回值" class="headerlink" title="方法4：函数内部显示分配堆内存来保存返回值"></a>方法4：函数内部显示分配堆内存来保存返回值</h3><h3 id="方法5：调用者分配内存来保存返回值【推荐】"><a href="#方法5：调用者分配内存来保存返回值【推荐】" class="headerlink" title="方法5：调用者分配内存来保存返回值【推荐】"></a>方法5：调用者分配内存来保存返回值【推荐】</h3>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/01/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -462,6 +622,12 @@ $(function() {
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="uyan_frame"></div>
+    
+  </div>
+
 
         </div>
         
@@ -482,8 +648,17 @@ $(function() {
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/10738249.jpeg"
@@ -567,6 +742,22 @@ $(function() {
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方法"><span class="nav-number">2.</span> <span class="nav-text">解决方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法1：返回字符串常量"><span class="nav-number">2.1.</span> <span class="nav-text">方法1：返回字符串常量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法2：使用全局申明的数组变量"><span class="nav-number">2.2.</span> <span class="nav-text">方法2：使用全局申明的数组变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法3：使用静态数组"><span class="nav-number">2.3.</span> <span class="nav-text">方法3：使用静态数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法4：函数内部显示分配堆内存来保存返回值"><span class="nav-number">2.4.</span> <span class="nav-text">方法4：函数内部显示分配堆内存来保存返回值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法5：调用者分配内存来保存返回值【推荐】"><span class="nav-number">2.5.</span> <span class="nav-text">方法5：调用者分配内存来保存返回值【推荐】</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -687,10 +878,10 @@ $(function() {
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
@@ -716,6 +907,10 @@ $(function() {
   
     
 
+    
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2142947"></script>
+      <!-- UY END -->
     
   
 
