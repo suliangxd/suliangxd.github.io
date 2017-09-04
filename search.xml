@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[C/C++实现函数返回字符串]]></title>
     <url>%2F2017%2F09%2F04%2FC-C-%E5%AE%9E%E7%8E%B0%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E5%AD%97%E7%AC%A6%E4%B8%B2%2F</url>
-    <content type="text"><![CDATA[问题如何实现一个返回值为char*的函数 解决方法方法1：返回字符串常量返回一个指向字符串常量的指针，但是这个方法非常局限，因为字符串常量存储在全局静态区，是只读内存区，无法对它进行计算和修改123456789char* fun() &#123; return "hello world";&#125;// 或者如下方式char* fun() &#123; // 不加const_cast会有warning:warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings] char *str = const_cast&lt;char *&gt;("hello world"); return str;&#125; 方法2：使用全局申明的数组变量使用一个全局数组变量来存储，简单易用，缺点是任何人可以在任何时候都可以修改这个数组，而且函数的下一次调用会覆盖掉当前值，此外，全局数组的大小需要 \geq 函数返回值所需要的内存大小12345678char g_str[100];char* fun() &#123; ... g_str[i] = ... ... return g_str;&#125; 方法3：使用静态数组方法4：函数内部显示分配堆内存来保存返回值方法5：调用者分配内存来保存返回值【推荐】]]></content>
+    <content type="text"><![CDATA[问题如何实现一个返回值为char*的函数 解决方法方法1：返回字符串常量返回一个指向字符串常量的指针，但是这个方法非常局限，因为字符串常量存储在全局静态区，是只读内存区，无法对它进行计算和修改123456789char* fun() &#123; return "hello world";&#125;// 或者如下方式char* fun() &#123; // 不加const_cast会有warning:warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings] char *str = const_cast&lt;char *&gt;("hello world"); return str;&#125; 方法2：使用全局申明的数组变量使用一个全局数组变量来存储，简单易用，缺点是任何人可以在任何时候都可以修改这个数组，而且函数的下一次调用会覆盖掉当前值，此外，全局数组的大小需要$ \geq $函数返回值所需要的内存大小12345678char g_str[100];char* fun() &#123; ... g_str[i] = ... ... return g_str;&#125; 方法3：使用静态数组方法4：函数内部显示分配堆内存来保存返回值方法5：调用者分配内存来保存返回值【推荐】]]></content>
       <categories>
         <category>C/C++</category>
       </categories>
