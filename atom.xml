@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://coderlight.cn/"/>
   <updated>2017-09-01T03:21:00.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://coderlight.cn/</id>
   
   <author>
     <name>Light</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2017/09/01/hello-world/"/>
-    <id>http://yoursite.com/2017/09/01/hello-world/</id>
+    <link href="http://coderlight.cn/2017/09/01/hello-world/"/>
+    <id>http://coderlight.cn/2017/09/01/hello-world/</id>
     <published>2017-09-01T03:21:00.000Z</published>
     <updated>2017-09-01T03:21:00.000Z</updated>
     
@@ -39,7 +39,7 @@
     
     </summary>
     
-      <category term="test" scheme="http://yoursite.com/categories/test/"/>
+      <category term="test" scheme="http://coderlight.cn/categories/test/"/>
     
     
   </entry>
